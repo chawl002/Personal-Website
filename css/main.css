@@ -1,0 +1,21 @@
+body{
+  background-color:#2B364A;
+}
+
+a{
+ text-decoration: none; 
+}
+
+#wrapper{
+  max-width: 940px;
+  <!-- first value in margin&padding sets top and bottom margins, while second sets left and right sides -->
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+#logo{
+ text-align:center;
+ margin: 0;
+ 
+  
+}

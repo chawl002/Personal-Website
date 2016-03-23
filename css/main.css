@@ -1,9 +1,9 @@
-body{
-  background-color:#2B364A;
-}
+/*******************
+General
+******************/
 
-a{
- text-decoration: none; 
+body{
+  font-family: 'Raleway', sans-serif;
 }
 
 #wrapper{
@@ -13,9 +13,170 @@ a{
   padding: 0 5%;
 }
 
+img{
+
+ max-width: 100%; 
+ height: auto;
+}
+
+a{
+  <!-- removes underline on links-->
+ text-decoration: none;
+}
+
+<!-- Changes highlight color. Only in Safari and Firefox-->
+p::selection {
+  background: #a8d1ff;
+}
+p::-moz-selection {
+  background: #a8d1ff;
+}
+
+/*******************
+Heading
+******************/
+header{
+/* float: left; */
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
 #logo{
  text-align:center;
- margin: 0;
- 
-  
+ margin: 0; 
 }
+
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+h2{
+  font-family: 'Josefin Sans', sans-serif;
+  margin: -5px 0;
+  font-size: 1.00em;
+  font-weight: normal;
+}
+
+
+
+/*******************
+Navigation
+******************/
+<!-- Navigation code based on: http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support
+http://www.htmlgoodies.com/beyond/css/how-to-create-horizontal-navigation-with-css3.html-->
+
+#centeredmenu{
+  width: 100%;
+  height: 35px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#centeredmenu ul{
+  height: auto;
+  padding: 15px 10px;
+  list-style: none;
+  text-align:center;
+}
+
+#centeredmenu li{
+  display: inline;
+  padding: 15px 10px;
+}
+
+#centeredmenu a{
+  text-decoration:none;
+}
+
+/*******************
+Footer
+******************/
+
+footer{
+ font-size: .75em;
+ text-align: center;
+  <!--stops the footer from floating around gallery-->
+ clear: both; 
+ padding-top: 50px;
+}
+
+.social-icon{
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+/*******************
+Page: Portfolio
+******************/
+
+#gallery{
+ margin 0;
+  padding 0;
+  <!--removes bullet points-->
+  list-style-type: none; /*Mozzila*/
+  list-style: none; /*Chrome*/
+}
+
+#gallery li{
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  list-style: none;
+  list-style-type: none;
+}
+
+#gallery li a p{
+   text-decoration: none !important;
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #522F59;
+}
+
+/*******************
+Colors
+******************/
+
+body{
+  background-color:#784764;
+}
+
+header{
+  background-color:#C08B3D;
+  border: #D59D6C;
+}
+
+a{  color: #522F59;
+}
+
+#centeredmenu ul{
+  background-color:#ddd;
+}
+
+#centeredmenu a, #centeredmenu a:visited {
+  color: #fff;
+}
+
+#centeredmenu a.selected{
+ color: #000; 
+}
+
+#centeredmenu a:hover{
+  color:orange; 
+}
+
+#gallery li{
+  background-color: #F3E6C4;
+  color: #522F59;
+}
+footer{
+ color: #ccc; 
+}
+
+
+
+
